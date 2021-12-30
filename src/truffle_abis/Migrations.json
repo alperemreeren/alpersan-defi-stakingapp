@@ -74,7 +74,7 @@
   "sourceMap": "27:540:2:-;;;126:58;8:9:-1;5:2;;;30:1;27;20:12;5:2;126:58:2;166:10;158:5;;:18;;;;;;;;;;;;;;;;;;27:540;;;;;;",
   "deployedSourceMap": "27:540:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:540:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;386:178;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;386:178:2;;;;;;;;;;;;;;;;;;;:::i;:::-;;81:36;;;:::i;:::-;;;;;;;;;;;;;;;;;;;54:20;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;267:111;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;267:111:2;;;;;;;;;;;;;;;;;:::i;:::-;;386:178;243:5;;;;;;;;;;;229:19;;:10;:19;;;225:26;;;453:19;486:11;453:45;;509:8;:21;;;531:24;;509:47;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;509:47:2;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;509:47:2;;;;250:1;225:26;386:178;:::o;81:36::-;;;;:::o;54:20::-;;;;;;;;;;;;;:::o;267:111::-;243:5;;;;;;;;;;;229:19;;:10;:19;;;225:26;;;361:9;334:24;:36;;;;225:26;267:111;:::o",
   "source": "pragma solidity ^0.5.0;\r\n\r\ncontract Migrations {\r\n    address public owner;\r\n    uint public last_completed_migration;\r\n\r\n    constructor() public {\r\n        owner = msg.sender;\r\n    }\r\n\r\n    modifier restricted() {\r\n        if (msg.sender == owner) _;\r\n    }\r\n\r\n    function setCompleted(uint completed) public restricted {\r\n        last_completed_migration = completed;\r\n    }\r\n\r\n    function upgrade(address new_address) public restricted {\r\n        Migrations upgraded = Migrations(new_address);\r\n        upgraded.setCompleted(last_completed_migration);\r\n    }\r\n}",
-  "sourcePath": "D:\\Docs\\DApp course\\defi-staking-app-starter\\src\\contracts\\Migrations.sol",
+  "sourcePath": "D:\\Docs\\_Completed Projects\\alpersan-defi-stakingapp\\src\\contracts\\Migrations.sol",
   "ast": {
     "absolutePath": "project:/src/contracts/Migrations.sol",
     "exportedSymbols": {
@@ -199,7 +199,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 638,
+                        "referencedDeclaration": 819,
                         "src": "166:3:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -283,7 +283,7 @@
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 638,
+                        "referencedDeclaration": 819,
                         "src": "229:3:2",
                         "typeDescriptions": {
                           "typeIdentifier": "t_magic_message",
@@ -900,7 +900,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 638,
+                                  "referencedDeclaration": 819,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -991,7 +991,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 638,
+                                  "referencedDeclaration": 819,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -1466,6 +1466,12 @@
     "version": "0.5.17+commit.d19bba13.Emscripten.clang"
   },
   "networks": {
+    "97": {
+      "events": {},
+      "links": {},
+      "address": "0x28eca99a5f9f708E9dc6AC63B6a90b724700C270",
+      "transactionHash": "0xb6ebf192fbc847ad695eacd9a8baa4a3ac32f701e4f394029dc9c747018f361f"
+    },
     "5777": {
       "events": {},
       "links": {},
@@ -1474,7 +1480,7 @@
     }
   },
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-12-04T14:36:31.584Z",
+  "updatedAt": "2021-12-30T15:32:17.381Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {}

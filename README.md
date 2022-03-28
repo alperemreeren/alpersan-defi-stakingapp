@@ -1,3 +1,13 @@
+## View Demo
+Live Demo for this DApp is available [Here](https://alperemreeren.github.io/alpersan-defi-stakingapp/)
+
+In order to use this DApp, you will need to;
+1. Add Binance Smart Chain Test Network to your Ethereum Wallet
+2. Get some Test BNB from [BSC Faucet](https://testnet.binance.org/faucet-smart)
+3. Get some ALPERSAN Token **COMING SOON**
+
+## Build your own instance
+
 **Outside Dependencies**
 - Node.JS
 - MetaMask
